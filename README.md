@@ -30,12 +30,10 @@ scrapy crawl example
 * enable middleware, it is better disable Scrapy built-in HttpProxyMiddleware
 
     ```
-
     DOWNLOADER_MIDDLEWARES = {
         "scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware": None,
         "os_scrapy_httpproxy_middleware.middlewares.HttpProxyMiddleware": 750,
     }
-    
     ```
 
 
